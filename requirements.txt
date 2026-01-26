@@ -1,0 +1,2 @@
+onnxruntime
+huggingface-hub
