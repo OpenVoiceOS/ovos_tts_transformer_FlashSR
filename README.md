@@ -21,8 +21,8 @@ operating on the generated waveform rather than on text.
 - If the incoming audio is already 48 kHz, the transform is skipped and the file
   is returned untouched.
 
-The model is fetched from the Hugging Face Hub on first use and cached locally —
-no manual download step is required.
+The model is fetched from the Hugging Face Hub on first use and cached locally.
+No manual download step is required.
 
 ## Installation
 
@@ -30,8 +30,8 @@ no manual download step is required.
 pip install ovos-tts-transformer-FlashSR
 ```
 
-GPU acceleration additionally requires `onnxruntime-gpu` and a working CUDA
-runtime; on CPU-only systems the default `onnxruntime` dependency is sufficient.
+GPU acceleration also requires `onnxruntime-gpu` and a working CUDA runtime.
+On CPU-only systems the default `onnxruntime` dependency is sufficient.
 
 ## Configuration
 
@@ -44,10 +44,10 @@ keyed by the plugin name:
 }
 ```
 
-The plugin takes no configuration of its own; once enabled it applies to the
-output of whichever TTS plugin is active. Multiple TTS transformers can be
-chained — execution order follows each plugin's `priority` (FlashSR defaults to
-`50`).
+The plugin takes no configuration of its own. Once enabled, it applies to the
+output of whichever TTS plugin is active. You can chain multiple TTS
+transformers. Execution order follows each plugin's `priority` (FlashSR
+defaults to `50`).
 
 ## Requirements
 
@@ -56,10 +56,10 @@ chained — execution order follows each plugin's `priority` (FlashSR defaults t
 
 ## Related
 
-- [`ovos-tts-transformer-NovaSR`](https://github.com/OpenVoiceOS/ovos_tts_transformer_NovaSR) —
+- [`ovos-tts-transformer-NovaSR`](https://github.com/OpenVoiceOS/ovos_tts_transformer_NovaSR):
   a Torch-based super-resolution transformer covering the same role.
-- [`ovos-tts-transformer-sox-plugin`](https://github.com/OpenVoiceOS/ovos-tts-transformer-sox-plugin) —
-  general-purpose audio effects (pitch, reverb, EQ, …) for TTS output.
+- [`ovos-tts-transformer-sox-plugin`](https://github.com/OpenVoiceOS/ovos-tts-transformer-sox-plugin):
+  general-purpose audio effects (pitch, reverb, EQ, and others) for TTS output.
 
 ---
 
