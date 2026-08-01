@@ -6,6 +6,7 @@
 
 **Merged pull requests:**
 
+- docs: rewrite README in Simplified Technical English [\#9](https://github.com/OpenVoiceOS/ovos_tts_transformer_FlashSR/pull/9) ([JarbasAl](https://github.com/JarbasAl))
 - docs: standardize NGI0 Commons Fund attribution [\#4](https://github.com/OpenVoiceOS/ovos_tts_transformer_FlashSR/pull/4) ([JarbasAl](https://github.com/JarbasAl))
 - docs: add NLnet/NGI0 attribution [\#2](https://github.com/OpenVoiceOS/ovos_tts_transformer_FlashSR/pull/2) ([JarbasAl](https://github.com/JarbasAl))
 - Configure Renovate [\#1](https://github.com/OpenVoiceOS/ovos_tts_transformer_FlashSR/pull/1) ([renovate[bot]](https://github.com/apps/renovate))
